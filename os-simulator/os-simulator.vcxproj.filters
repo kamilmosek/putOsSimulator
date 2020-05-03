@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="CPU.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Process.cpp" />
+    <ClCompile Include="ProcessManager.cpp" />
+    <ClCompile Include="RAM.cpp" />
+    <ClCompile Include="Segment.cpp" />
+    <ClCompile Include="Shell.cpp" />
+    <ClCompile Include="VirtualMemory.cpp" />
+    <ClCompile Include="Assembler.cpp" />
+    <ClCompile Include="Semaphore.cpp" />
+    <ClCompile Include="TablePrinter.cpp" />
+    <ClCompile Include="FileSystem.cpp" />
+    <ClCompile Include="FileSystemDirectory.cpp" />
+    <ClCompile Include="File.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CPU.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Process.h" />
+    <ClInclude Include="ProcessManager.h" />
+    <ClInclude Include="RAM.h" />
+    <ClInclude Include="Segment.h" />
+    <ClInclude Include="Shell.h" />
+    <ClInclude Include="VirtualMemory.h" />
+    <ClInclude Include="Singleton.h" />
+    <ClInclude Include="Assembler.h" />
+    <ClInclude Include="TablePrinter.h" />
+    <ClInclude Include="Semaphore.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Polecenia_assemblerowe.txt" />
+    <Text Include="ciagEulera.txt" />
+    <ClInclude Include="FileSystem.h" />
+    <ClInclude Include="FileSystemDirectory.h" />
+    <ClInclude Include="File.h" />
+    <Text Include="test.txt" />
+    <Text Include="CheckProcess.txt" />
+  </ItemGroup>
+</Project>

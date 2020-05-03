@@ -1,0 +1,41 @@
+AD rejestrX rejestrY	- dodaj rejestrY do rejestruX  		- rejestrX += rejestrY
+AD rejestrX int		- dodaj int do rejestruX  		- rejestrX += int
+AD rejestrX [RAM] 	- dodaje do rejestruX wartość odczytana z RAM
+
+SB rejestrX rejestrY	- odejmij rejestrY do rejestruX  	- rejestrX -= rejestrY
+SB rejestrX int		- odejmij int do rejestruX  		- rejestrX -= int
+SB rejestrX [RAM]	- odczytuje pozycje z miejsca RAM i zapisuje do rejestrX
+	
+MV rejestrX rejestrY 	- przypisz rejestrX wartość rejestrY 	- rejestrX = rejestrY
+MV rejestrX int		- przypisz rejestrX wartość int		- rejestrX = int
+MV rejestrX [RAM]	- przypisuje rejestrowi X wartość odczytaniej pozycji z RAM
+
+MU rejestrX rejestrY	- pomnóz rejestrX przez rejestrY	- rejestrX *= rejestrY
+MU rejestrX int		- pomnóz rejestrX przez int		- rejestrX *= int
+MU rejestrX [RAM]	- pomnóż rejestrX przez wartosc z RAM
+
+IC rejestrX		- zwiększa rejestrX o 1			- rejestrX++
+DC rejestrX		- zmniejsza rejestrX o 1		- rejestrX--
+
+JP int			- skocz do linii int
+JC int 			- skocz do linii int jeśli rejestr C != 0
+JZ int 			- skocz do linii int jeśli rejestr C == 0
+JL int 			- skocz do linii int jeśli rejestr C < 0
+JM int	 		- skocz do linii int jeśli rejestr C > 0 
+
+EX			- koniec programu
+NP			- nic nie robi dla tymona zapetlone ze nie zwieksza lini
+PN			- nic nie robi poprostu
+
+FO plik 		- otworz plik o nazwie nazwa - jeśli nie uda się otworzyć to robi sie waiting
+FC plik			- zamknij plik o nazwie plik
+DF plik			- usuń plik o nazwie plik - możliwe tylko gdy jest zamknięty  ---
+CF plik 		- stwórz plik o nazwie plik ---
+AF plik tresc		- dopisuje do pliku o nazwie nazwa teskt tresc
+WF plik tresc		- nadpisuje tresc w pliku plik
+AR plik rejestr 	- dopisuje do pliku o nazwie plik wartosc rejestru rejestr
+PF plik			- czyta po bicie
+RF plik 		- restet pointera ktory czyta
+
+PC nazwa plik priority	- tworz proces o nazwie nazwa plik priority		
+PD nazwa 		- usun proces o nazwie nazwa
